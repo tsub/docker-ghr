@@ -1,5 +1,7 @@
 FROM frolvlad/alpine-glibc:alpine-3.6
 LABEL maintainer "tsub <tsubasatakayama511@gmail.com>"
+LABEL io.whalebrew.config.environment '["GITHUB_TOKEN"]'
+LABEL io.whalebrew.config.volumes '["~/.gitconfig:/.gitconfig:ro"]'
 
 ENV GHR_VERSION="0.5.4"
 
